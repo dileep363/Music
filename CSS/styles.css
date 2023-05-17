@@ -1,0 +1,106 @@
+
+/* This is the CSS for the login & sign up pages */
+
+body {
+    position: relative;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    margin: 60px;
+    animation: fadeIn 2.8s;
+}
+
+.container-lg {
+    /* background-image: -moz-linear-gradient(); */
+    padding: 15%;
+    /* text-align: right; */
+    /* position: relative; */
+    /* margin: 50px; */
+    /* border-radius: 20px; */
+}
+
+.container-md {
+    /* background-image: -moz-linear-gradient(); */
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);    
+    padding: 15%;
+    top : -160px;
+    text-align: center;
+    position: relative;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.signBody {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);    
+    animation: fadeIn 2.8s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+#loginHeading {
+    color: white;
+    text-shadow: 2px 3px black;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.username, .password, .umail {
+    background-color: aliceblue;
+    /* padding: 2px; */
+    font-size: 14px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.inp1 {
+    background-color: aliceblue;
+    /* padding: 2px; */
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+#submitLogin {
+    font-size: 20px;
+    background-color: #1586c8;
+    background-image: linear-gradient(160deg, #147cb8 0%, #492ec3 100%);
+    margin: 20px;
+}
+
+#submitLogin:hover {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #2f94ce 0%, #5842d4 100%);
+    margin: 20px;
+}
+
+.signCont {
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+
+}
+
+#registerText {
+    color: yellow;
+    text-decoration: none;
+}
+
+#registerButton {
+    font-size: 20px;
+    background-color: #1586c8;
+    background-image: linear-gradient(160deg, #147cb8 0%, #492ec3 100%);
+    margin: 30px 0 0 0;
+    border-radius: 20px;
+    /* padding: 5px; */
+}
+
+#registerButton:hover {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #2f94ce 0%, #5842d4 100%);
+    margin: 30px 0 0 0;
+}
+
+

@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    color: azure;
+} 
+#header{
+    background-color: black;
+    
+    /* background: rgb(251,251,232);
+background: linear-gradient(90deg, rgba(251,251,232,1) 0%, rgba(237,241,209,1) 84%, rgba(243,243,214,1) 100%); */
+
+    left:20%;
+    top: 0;
+    position:fixed;
+    height: 60px;
+    width:80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#profileLogo:hover {
+  color: rgb(78, 144, 225);
+  transform: scale(1.5);
+  transition: 1s;
+}
+
+
+
+#footer{
+    left:0;
+    bottom: 0;
+    position: fixed;
+    height: 10%;
+    width:100%;
+    background-color: brown;
+}
+#left{
+    background-color: rgba(39, 35, 35, 0.922);
+
+    
+    left:0;
+    top:0;
+    position:fixed;
+    height: 100%;
+    width:20%;
+}
+
+
+#main{
+    background-color: black;
+    top:60px;
+    width :80%;
+    margin: 60px 20%;
+}
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+#header #sear{
+    display: block;
+    padding-left: 30px;
+
+}
+
+#header #acc{
+    padding-right: 40px;
+    font-size: 30px;
+}
+
+#seard{
+    font-size: 20px;
+    border-color: black;
+    background-color: rgb(77, 74, 74);
+
+}
+#sub1{
+    background-color:rgb(42, 40, 40) ;
+    font-size: 20px;
+    border-color: black;
+
+}
+
+#imga{
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-color: aliceblue;
+}
+
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    text-align:left;
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    
+    
+  }
+  
+  #abcd {
+    font-size: 20px;
+    /* font-family: 'Gambetta', serif; */
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0px;
+    transition: 400ms ease;
+    color: rgb(237, 237, 232);
+    outline: none;
+    padding: 30px 5px 10px 30px;
+  }
+  
+  #abcd:hover {
+    font-variation-settings: "wght" 582; 
+    padding-left: 45px;
+    color: rgb(111, 172, 242);
+    letter-spacing: 1.8px;
+  }
+
+  #abcde {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    letter-spacing: -3px;
+    padding-top: 20px;
+    transition: 700ms ease;
+    color: rgb(237, 237, 232);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    outline: none;
+  }
+  
+  #abcde:hover {
+    font-variation-settings: "XHGT" 0.7; 
+    letter-spacing: 1px;
+  }
+  
+ #greetings{
+    height:100px;
+    top:25px;
+    /* background-color: bisque; */
+
+ }
+
+  /* #song1,#song2,#song3{
+    top: 50px;
+    height:250px;
+    width: 100%;
+    position: block;
+    
+    background-color: rgb(61, 58, 58);
+  }
+  #child{
+    margin-top: 20px;
+    margin-left: 10px;
+    display: grid;
+    gap: 5px;
+    grid-auto-flow: column;
+    grid-auto-columns: 18%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  }
+  #heiwid{
+    height: 130px;
+    width:200px;
+  }
+  #heiname{
+    margin-top: 160px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  } */
+
+
+.side-list-text {
+  text-decoration: none;
+  color: rgb(237, 237, 232);
+}
+
+.side-list-text:hover {
+  color: rgb(111, 172, 242);
+}
+
+
+/*Search box CSS code*/
+.search-container{
+    background: #fff;
+    height: 30px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.8s;
+    /*box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    inset -7px -7px 10px 0px rgba(0,0,0,.1),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+   text-shadow:  0px 0px 6px rgba(255,255,255,.3),
+              -4px -4px 6px rgba(116, 125, 136, .2);
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);*/
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+.search-container:hover > .search-input{
+    width: 300px;
+}
+
+.search-container .search-input{
+    background: transparent;
+    border: none;
+    outline:none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.8s;
+
+}
+
+.search-container .search-btn .fas{
+    color: #5cbdbb;
+}
+
+
+/* Titles in Main Portion */
+.head-titles {
+  font-size: 40px;
+}
+
+
+.main-part {
+  margin-left: 296px;
+  top: -60px;
+  position: relative;
+  background-color: rgb(116, 46, 182);
+}
+
+/* Music Cards in the main section */
+.card-body {
+  /* justify-content: center; */
+  text-align: center;
+  padding: 30px;
+  margin: 30px;
+  object-fit: fill;
+  background-color: #5cbdbb;
+  border-radius: 6px;
+  color: rgb(183, 16, 21);
+}
+
+.col-md-2 {
+  background-color: #5cbdbb;
+}
+
+.card-body > img {
+  border-radius: 10%;
+}
+
+.latSongs {
+  display: grid;
+    gap: 90px;
+    grid-auto-flow: column;
+    grid-auto-columns: 18%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.song1 {
+  /* top: -px; */
+  position: relative;
+}
+
